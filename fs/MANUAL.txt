@@ -1,0 +1,63 @@
+#################################################################################
+#                                                                               #
+#                           PARROT LINUX MANUAL                                 #
+#                             BY syntaxMORG0                                    #
+#################################################################################
+
+Parrot linux is a really small linux distro!
+SUPPORTED ARCH: x86_64
+
+1.0 Introduction
+
+Parrot linux is a tiny linux distro which is not based on any other distros
+In the future it will support wayland (wl)
+
+also if the shell prompt does not appear try pressing <ENTER> that will help
+sh5.5# # Preview of the shell prompt
+
+1.1 Run your first program
+
+The starting directory is / or root so to execute a program type /<path to your program>
+for example to run a simple fetch script which is included in this OS type
+/fet.sh
+It will return some basic system data including RAM, CPU, Uptime and kernel
+
+1.2 Creating directories and moving around in userspace
+
+to create a directory type mkdir <name>. after that try to enter to that directory
+by typing cd <path to directory>. you can also list contents of a directory
+try typing ls / that means list root it will most likely say
+bin etc proc usr lib, and more
+
+1.3 Editing files
+
+Find a text document or create one by typing touch <name>.txt and start editing them
+with vi <filename>.txt
+
+1.4 vi or the basic text editor
+
+When you enter and try to type nothing happens first you need to enter --INSERT-- mode
+to enter insert press the key <I> now you can start typing. Once you are done hit <ESC>
+then you can enter back to CMD mode. To exit type <:wq> for write quit
+
+Diffrent exiting methods
+:wq # write quit
+:q  # quit (No save)
+:q! # quit forced (No save)
+
+Thats all the basic things you need to get started! GOOD LUCK!!!
+
+ALl standard POSIX commands inluded in toybox
+
+Note!
+If you want to mount a partition you need to format it to ext4
+at the moment you need to chroot into another linux distro to use mkfs.ext4
+this issue might be patched later
+
+Goals!
+Parrot is colorful and i want to get wayland to work and run any form of a
+emulator. Also it would be cool to get a package manager.
+
+WARNING!
+This is not meant for production this is verry limited (but still better than DOS)
+
